@@ -1,18 +1,6 @@
 import { useEffect, useState } from "react";
 import axios, { AxiosResponse } from "axios";
-
-export interface Startup {
-  currentInvestmentStage: string;
-  dateFounded: string;
-  employees: string;
-  id: number;
-  legalEntity: string;
-  name: string;
-  shortDescription: string;
-  technologyReadiness: string;
-  totalFunding: number;
-  usps: Array<any>;
-}
+import { Startup } from "../Startup/StartupList";
 
 const url = "http://localhost:8000/api/startups";
 
